@@ -162,3 +162,36 @@ h2 {
     color: #f8fafc;
     margin: 32px 0;
 }
+
+.side-element {
+    position: fixed;
+    right: -500px;
+    top: 0px;
+    width: 700px;
+    height: 700px;
+    animation: rotate 1ms ease-in-out;
+    animation-timeline: scroll();
+}
+
+.side-element-1 {
+    top: 0px;
+    filter: drop-shadow(0px 0px 32px rgba(71, 19, 214, 0.9));
+
+} 
+
+.side-element-2 {
+    top: -100px;
+    filter: drop-shadow(0px 0px 32px #c026d3)
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+        margin-top: 0px;
+    }
+
+    to {
+        transform: rotate(360deg);
+        margin-top: 500px;
+    }
+}
