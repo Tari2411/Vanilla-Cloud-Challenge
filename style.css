@@ -1,44 +1,55 @@
-
-
-*, *::before, *::after{
-    box-sizing: border-box; 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-*{
-    margin: 0; 
-    padding: 0; 
+* {
+    margin: 0;
+    padding: 0;
 }
 
-ul[role='list'], ol[role='list']{
-    list-style: none; 
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
 }
 
-html:focus-within{
-    scroll-behavior: smooth; 
+html:focus-within {
+    scroll-behavior: smooth;
 }
 
-a:not([class]){
-    text-decoration-skip-ink: auto; 
+a:not([class]) {
+    text-decoration-skip-ink: auto;
 }
 
-img, picture, svg, video, canvas{
+img,
+picture,
+svg,
+video,
+canvas {
     max-width: 100%;
-    height: auto; 
-    vertical-align: middle; 
-    font-style: italic; 
-    background-repeat: no-repeat; 
+    height: auto;
+    vertical-align: middle;
+    font-style: italic;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
-input, button, textarea, select{
-    font: inherit; 
+input,
+button,
+textarea,
+select {
+    font: inherit;
 }
 
-@media (prefers-reduced-motion: reduce){
+@media (prefers-reduced-motion: reduce) {
     html:focus-within {
         scroll-behavior: auto;
     }
-    *, *::before, *::after {
+
+    *,
+    *::before,
+    *::after {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
@@ -47,14 +58,17 @@ input, button, textarea, select{
     }
 }
 
-body, html{
-    height: 100%; 
-    scroll-behavior: smooth; 
+body,
+html {
+    height: 100%;
+    scroll-behavior: smooth;
 }
+
 body {
     background-color: #020617;
-    font-family: "Roboto" ;
+    font-family: "Roboto";
 }
+
 header {
     display: flex;
     width: 100%;
@@ -68,9 +82,81 @@ nav {
     align-items: center;
     gap: 100px;
 }
+
 nav a {
     color: #f8fafc;
     text-decoration: none;
     font-size: 18px;
     font-weight: 700;
+
+}
+
+main {
+    padding: 40px 0;
+}
+
+section {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.main-section {
+    max-width: 450px;
+}
+
+.main-section h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #f8fafc;
+    text-align: center;
+}
+
+.main-section p {
+    font-size: 16px;
+    color: #64748b;
+    text-align: center;
+    margin-top: 16px;
+
+}
+.main-section div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 24px;
+}
+.main-section div button {
+    background-color: transparent;
+    padding: 8px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14PX;
+    font-weight: 700;
+}
+
+.game-button {
+
+color: #10b981;
+border: 1px solid #10b981;
+}
+
+.company-button {
+    color: #4f46e5;
+    border: 1px solid #4f46e5;
+}
+
+.line {
+    width: 2px;
+    height: 100vh;
+    background-color: #64748b;
+    margin-top: 80px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #f8fafc;
+    margin: 32px 0;
 }
